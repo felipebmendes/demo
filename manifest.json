@@ -1,0 +1,41 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "Demo",
+        "algorithmName": "Demo",
+        "algorithmTitle": {
+          "en-US": "Demo",
+          "pt-br": "Demo"
+        },
+        "algorithmDescription": {
+          "en-US": "Demo",
+          "pt-br": "Demo"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerName": "app-image-demo",
+            "flavor": "c1.small"
+          },
+          "environments": {
+            "ENV": "PROD",
+            "LOCALSCHEDULER": "True"
+          }
+        }
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "app-image-demo",
+      "dockerTag": "0.0.1",
+      "gitBranch": "master",
+      "gitPath": ".",
+      "instanceType": "c1.small",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/felipebmendes/demo",
+      "appName": "demo1"
+    }
+  ]
+}
